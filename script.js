@@ -21,7 +21,7 @@ function showFiveDay(data){
       <h3>${data.list[i].dt_txt}</h3>
     </div>
     <div class="card-body">
-      <p>test</p>
+      <p></p>
     </div>
   </div>`
   fiveDay.insertAdjacentHTML("beforeend", html)
