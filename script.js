@@ -35,7 +35,7 @@ function showWeather(data){
   humidity.textContent=`humidity: ${data.list[0].main.humidity} %`
 }
 function getWeather(){
-  fetch (`http://api.openweathermap.org/data/2.5/forecast?q=${searchbar.value}&appid=c82064eb7e58f2184dc24d4908b28cf9&units=imperial`)
+  fetch (`https://api.openweathermap.org/data/2.5/forecast?q=${searchbar.value}&appid=c82064eb7e58f2184dc24d4908b28cf9&units=imperial`)
   .then (response => {
     return response.json()
   }).then(data => {
